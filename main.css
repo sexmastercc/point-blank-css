@@ -1,150 +1,142 @@
- * {
-            background-color: #13171f;
+/* Removed the universal selector to avoid applying styles globally unless necessary. */
 
-        }
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #13171f;
+}
 
-        body {
-            padding: 0px;
-            margin: 0;
-            background-color: #13171f;
-        }
+.bebas-neue-regular {
+    font-family: "Roboto", sans-serif; /* Ensure the font family matches your intention. */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.2;
+}
 
-        .bebas-neue-regular {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 26px;
-            line-height: 1.2;
-        }
+#uv-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px; /* Adjust as needed. */
+}
 
-        #uv-address {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 1000px;  /*Adjust as needed.*/
-        }
+.gay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px; /* Adjust as needed. */
+}
 
-        .gay {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            margin-top: 100px; /*Adjust as needed.*/
-        }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    transition: left 0.5s; /* Specify which property to transition for smoother effects. */
+    z-index: 1;
+    background-color: #13171f;
+}
 
-        /* Heres your code to make your sidebar more Minimalisic */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            overflow-x: hidden;
-            transition: 0.5s;
-            z-index: 1;
-            background-color: #13171f;
-        }
+.sidebar.active {
+    left: 0;
+}
 
-        .sidebar.active {
-            left: 0;
-        }
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-bottom: 1px solid #444;
+}
 
-        .sidebar a {
-            display: block;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 7px 10px;
-            border-bottom: 1px solid #444;
-        }
+.sidebar a:hover {
+    background-color: #005f73;
+    color: #ddd;
+    transform: translateY(-1px);
+}
 
-        .sidebar a:hover {
-            background-color: #005f73;
-            color: #ddd;
-            transform: translateY(-1px);
-        }
+#close-sidebar-btn {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+}
 
-        #close-sidebar-btn {
-            position: absolute;
-            top: -20px;
-            right: -10px;
-            font-size: 36px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            border-radius: 50%;
-            padding: 8px;
-        }
+#close-sidebar-btn:hover {
+    color: white;
+}
 
-        #close-sidebar-btn:hover {
-            color: white;
-        }
+#i-hate-life {
+    margin-top: 15px;
+}
 
-        #i-hate-life {
-            margin-top: 15px;
-        }
+.please-tell-me-how-to-use-pico-css {
+    width: 100%; /* Removed redundant 'top' property. */
+    text-align: center;
+}
 
-        .please-tell-me-how-to-use-pico-css {
-            width: 100%;
-            top: 10px;
-            text-align: center;
-            width: auto;
-        }
+.blur-background {
+    filter: blur(5px);
+    transition: filter 0.5s ease-in-out;
+}
 
-        .blur-background {
-            filter: blur(5px);
-            transition: filter 0.5s ease-in-out;
-        }
+#main-content {
+    position: relative;
+    background-color: black;
+}
 
-        #main-content {
-            position: relative;
-            background-color: black;
-        }
+.please-check-these-out {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+}
 
-        .please-check-these-out {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: black;
-        }
- 
-        /* github button */
-        .git2 {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #13171f;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
+.git2 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #13171f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
 
-        .sidebar a:hover i {
-            color: #ddd;
-            background-color: #005f73;
-        }
+.sidebar a:hover i {
+    color: #ddd;
+    background-color: #005f73;
+}
 
-        /* switch search engine buttons */
-        .dick button {
-            background-color: #131A24; /* I am unable to assist in making a unblocker */
-            color: #fff;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-            outline: none;
-            transition: background-color 0.3s;
-        }
+.dick button {
+    background-color: #131A24;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
 
-        .dick button:focus {
-            background-color: #555;
-        }
+.dick button:focus {
+    background-color: #555;
+}
 
-        .dick button[data-search-engine="google"]:hover,
-        .dick button[data-search-engine="bing"]:hover,
-        .dick button[data-search-engine="duckduckgo"]:hover {
-            background-color: #005f73;
-            transform: translateY(-1px);
-        }
+.dick button[data-search-engine="google"]:hover,
+.dick button[data-search-engine="bing"]:hover,
+.dick button[data-search-engine="duckduckgo"]:hover {
+    background-color: #005f73;
+    transform: translateY(-1px);
+}
 
-        .dick button.active {
-            background-color: #005f73;
-            color: #fff;
-        }
+.dick button.active {
+    background-color: #005f73;
+    color: #fff;
+}
